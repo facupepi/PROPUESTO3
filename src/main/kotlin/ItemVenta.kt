@@ -1,6 +1,6 @@
 class ItemVenta (
-    var mercaderia : Mercaderia,
-    var cantidad : Int
+    private var mercaderia : Mercaderia,
+    private var cantidad : Int
 ){
     init{
         mercaderia.stock -= cantidad

@@ -1,6 +1,6 @@
 abstract class Mercaderia(
-    var codigo : Int,
-    var descripcion : String,
+    private var codigo : Int,
+    private var descripcion : String,
     var precio : Double,
     var stock : Int,
     var stockMinimo : Int

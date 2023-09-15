@@ -1,14 +1,14 @@
 class Venta(
     var fecha : String?,
     var pago : Double?,
-    var vuelto : Double?,
+    private var vuelto : Double?,
     var razonSocial: RazonSocial?,
     var concretada: Boolean = false,
     var importe : Double = 0.0
 ) {
-    var items : ArrayList<ItemVenta> = arrayListOf()
+    private var items : ArrayList<ItemVenta> = arrayListOf()
     fun agregarItem(mercaderia: Mercaderia, cantidad: Int){
-        var itemTemp= ItemVenta(mercaderia, cantidad)
+        val itemTemp= ItemVenta(mercaderia, cantidad)
 
         items.add(itemTemp)
         importe += itemTemp.importePorCantidad()

@@ -17,7 +17,7 @@ class Gestor {
                 cadena += "$mercaderiaTemp\n"
             }
         }
-        if (cadena != "") println("MERCADERIAS CON POCO STOCK:\n"+cadena)
+        if (cadena != "") println("MERCADERIAS CON POCO STOCK:\n$cadena")
         else println("TODAS LAS MERCADERIAS TIENEN STOCK MAYOR AL MINIMO")
     }
 }
